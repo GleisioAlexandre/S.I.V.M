@@ -50,6 +50,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="view\Frm_Produto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view\Frm_Produto.Designer.cs">
+      <DependentUpon>Frm_Produto.cs</DependentUpon>
+    </Compile>
     <Compile Include="view\Frm_Home.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,6 +70,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="view\Frm_Produto.resx">
+      <DependentUpon>Frm_Produto.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="view\Frm_Home.resx">
       <DependentUpon>Frm_Home.cs</DependentUpon>
     </EmbeddedResource>
