@@ -16,5 +16,10 @@ namespace S.I.V.M.view
         {
             InitializeComponent();
         }
+
+        private void Frm_Produto_Load(object sender, EventArgs e)
+        {
+            dtgProduto.DataSource = bindingSource;
+        }
     }
 }

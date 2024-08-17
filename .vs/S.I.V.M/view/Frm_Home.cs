@@ -16,5 +16,12 @@ namespace S.I.V.M.view
         {
             InitializeComponent();
         }
+
+        private void produtoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Frm_Produto produto = new Frm_Produto();
+            produto.MdiParent = this;
+            produto.Show();
+        }
     }
 }
