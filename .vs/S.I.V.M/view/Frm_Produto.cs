@@ -21,5 +21,16 @@ namespace S.I.V.M.view
         {
             dtgProduto.DataSource = bindingSource;
         }
+
+        private void dtgProduto_ColumnHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            int indiceColuna = e.ColumnIndex;
+            lblPesquisa.Text = dtgProduto.Columns[indiceColuna].HeaderText;
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
